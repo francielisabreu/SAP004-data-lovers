@@ -1,0 +1,78 @@
+@import "css/reset.css";
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  line-height: 1;
+}
+body {
+  font-family: "nunito", Arial, Helvetica, sans-serif;
+  background-color: #fff;
+}
+.header-bg {
+  background: #0e1013;
+}
+
+.menu {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+  padding: 15px;
+}
+
+.menu-logo {
+  margin: 0px 15px;
+}
+
+.menu-nav {
+  display: block;
+}
+.menu-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bolder;
+}
+.menu-nav a {
+  font-size: 1.25em;
+  display: block;
+  padding: 0 10px;
+  margin: 0px 15px;
+  color: #ffc93c;
+  font-weight: bolder;
+}
+.video-content video {
+  opacity: 0.9;
+}
+#videoBG {
+  position: fixed;
+  z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: auto;
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  #videoBG {
+    display: none;
+  }
+  body {
+    background: url("img/poster-pokemania.png");
+    background-size: cover;
+  }
+}
