@@ -74,7 +74,6 @@ body {
   box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 .video-content video {
-  display: flex;
   opacity: 0.9;
   color: #f5f5f5;
 }
@@ -103,9 +102,7 @@ body {
     background-size: cover;
   }
 }
-.main {
-  display: flex;
-}
+
 .site-search {
   position: relative;
   display: -ms-flexbox;
@@ -118,7 +115,7 @@ body {
 }
 
 .form-search {
-  display: block;
+  display: flex;
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
@@ -131,4 +128,8 @@ body {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.main-container {
+  display: flexbox;
 }
