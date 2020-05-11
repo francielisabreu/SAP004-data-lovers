@@ -97,13 +97,7 @@ body {
     display: none;
   }
   .video-content img {
-
-    display:block;
-  }
-}
-  body {
-    background: url("img/poster-pokemania.png");
-    background-size: cover;
+    display: block;
   }
 }
 
