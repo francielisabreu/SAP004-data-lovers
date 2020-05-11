@@ -97,6 +97,7 @@ body {
     display: none;
   }
   .video-content img {
+    width: 100%;
     display: block;
   }
 }
