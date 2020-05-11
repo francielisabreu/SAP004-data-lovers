@@ -86,10 +86,16 @@ body {
     width: 100%;
     height: auto;
   }
+  .video-content img {
+    display: none;
+  }
 }
 @media (max-aspect-ratio: 16/9) {
   #videoBG {
     height: 100%;
+  }
+  .video-content img {
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -97,6 +103,7 @@ body {
     display: none;
   }
   .video-content img {
+    width: 100%;
     display: block;
   }
 }
