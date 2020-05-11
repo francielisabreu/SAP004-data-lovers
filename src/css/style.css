@@ -109,7 +109,7 @@ body {
 }
 
 .main-container {
-  width: 100%;
+  width: 960px;
 }
 .form-search {
   display: block;
