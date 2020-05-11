@@ -11,7 +11,6 @@ pokemon battle">
   <title>Pokémania</title>
   <link rel="icon" href="img/icon-pokemania.svg">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/af9ea7c92d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -40,13 +39,13 @@ pokemon battle">
   </header>
   <main class="main-container">
     <section class="site-search">
-      <form action="" class="form-search" method="GET"></form>
-      <input type="search" class="form-search" placeholder="Buscar:" aria-label="Buscar:">
+      <form action="" class="form-search" role="search" method="GET">
+        <input id="input-search" type="search" class="form-search" placeholder="Ex: insira o nome do pokémon ou o nº 0 a 151" aria-label="search for..." autocomplete="off" spellcheck="false" role="combobox" dir="auto">
+        <label for="input-search"></label>
+      </form>
     </section>
   </main>
-
   <script src="main.js" type="module"></script>
-
 </body>
 
 </html>
