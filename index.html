@@ -11,7 +11,6 @@ pokemon battle">
   <title>Pokémania</title>
   <link rel="icon" href="img/icon-pokemania.svg">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/af9ea7c92d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -33,20 +32,23 @@ pokemon battle">
     </section>
     <section class="video-content">
       <video playsinline="playsinline" id="videoBG" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="../video/pokemania-low.mp4" type="video/mp4">
+        <source src="../video/pokemania-low-02.mp4" type="video/mp4">
       </video>
       <img src="../img/poster-pokemania.png" alt="poster pokemania">
     </section>
   </header>
-  <main class="main-container">
-    <section class="site-search">
-      <form action="" class="form-search" method="GET"></form>
-      <input type="search" class="form-search" placeholder="Buscar:" aria-label="Buscar:">
+  <main class="main">
+    <section class="search-site">
+      <div class="search-form">
+        <form class="form-site container">
+          <label for="input-search" class=" "> Buscar: </label>
+          <input type="search" name="q" id="input-search" name="q" title="Buscar" placeholder="Ex: nome ou número" autofocus autocapitalize="off" role="combobox" spellcheck="false" aria-expanded="false" aria-haspopup="false" autocomplete="off" maxlength="2024" wi>
+        </form>
+      </div>
+
     </section>
   </main>
-
   <script src="main.js" type="module"></script>
-
 </body>
 
 </html>

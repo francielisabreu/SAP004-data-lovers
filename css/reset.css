@@ -1,4 +1,3 @@
-body,
 div,
 span,
 object,
@@ -10,6 +9,7 @@ h4,
 h5,
 h6,
 p,
+body,
 blockquote,
 pre,
 abbr,
@@ -48,9 +48,7 @@ tfoot,
 thead,
 tr,
 th,
-td,
 article,
-aside,
 canvas,
 details,
 figcaption,
@@ -62,15 +60,12 @@ menu,
 nav,
 section,
 summary,
-time,
 mark,
-audio,
 a {
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
-  font-size: 100%;
   vertical-align: baseline;
   background: transparent;
   text-decoration: none;
