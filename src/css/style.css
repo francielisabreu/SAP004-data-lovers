@@ -114,7 +114,6 @@ body {
 
 .search-section {
   width: 100%;
-  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -130,6 +129,7 @@ body {
 }
 .btn {
   display: inline-block;
+  flex-wrap: wrap;
   font-weight: 400;
   min-width: 7rem;
   align-content: center;
