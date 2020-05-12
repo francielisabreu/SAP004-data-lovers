@@ -51,7 +51,6 @@ th,
 article,
 canvas,
 details,
-figcaption,
 figure,
 footer,
 header,
@@ -60,17 +59,20 @@ menu,
 nav,
 section,
 summary,
-mark,
-a {
+mark {
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
   vertical-align: baseline;
   background: transparent;
+}
+a,
+h1,
+h2,
+h3 {
   text-decoration: none;
 }
-
 body {
   line-height: 1;
 }
