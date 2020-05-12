@@ -19,13 +19,16 @@ body {
 }
 
 .menu {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   margin: 0px auto;
   padding: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .menu-logo {
@@ -41,7 +44,8 @@ body {
   font-weight: bolder;
 }
 .menu-nav a {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   font-weight: 400;
   align-content: center;
   text-align: center;
@@ -108,9 +112,6 @@ body {
     display: block;
   }
 }
-.main {
-  min-width: 90vh;
-}
 
 .search-section {
   width: 100%;
@@ -128,7 +129,8 @@ body {
   display: flex;
 }
 .btn {
-  display: inline-block;
+  width: 100%;
+  display: flex;
   flex-wrap: wrap;
   font-weight: 400;
   min-width: 7rem;
@@ -159,6 +161,7 @@ body {
 
 .select {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 10px;
   margin-bottom: 0 0.1rem !important;
   font-size: 1rem;
