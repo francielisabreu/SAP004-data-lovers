@@ -132,15 +132,14 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  font-weight: 400;
-  min-width: 7rem;
+  font-weight: 300;
+  min-width: 6rem;
   align-content: center;
   text-align: center;
   vertical-align: middle;
   padding: 0 10px;
   margin-bottom: 0 0.1rem !important;
   cursor: pointer;
-  user-select: none;
   list-style: none;
   background-color: transparent;
   border: 2px solid transparent;
@@ -160,19 +159,24 @@ body {
 }
 
 .select {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   padding: 0 10px;
   margin-bottom: 0 0.1rem !important;
   font-size: 1rem;
+  min-width: 6rem;
   line-height: 1.5;
   border-radius: 0.25rem;
   background-clip: padding-box;
   color: #0e1013;
   border-color: #fff;
-  justify-items: center;
-  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 .select option {
   text-align: center;
+  justify-items: center;
+  justify-content: center;
 }
