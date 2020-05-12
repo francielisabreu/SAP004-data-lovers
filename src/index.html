@@ -23,10 +23,10 @@ pokemon battle">
       </div>
       <nav class="menu-nav">
         <ul>
-          <li><a href="index.html" class="btn-nav" role="button" aria-pressed="true">Home</a></li>
-          <li><a href="tipo.html" class="btn-nav" role="button" aria-pressed="true">Tipo</a></li>
-          <li><a href="evolucao.html" class="btn-nav" role="button" aria-pressed="true">Evolução</a></li>
-          <li><a href="comparar.html" class="btn-nav" role="button" aria-pressed="true">Comparar</a></li>
+          <li><a href="index.html" role="button" aria-pressed="true">Home</a></li>
+          <li><a href="tipo.html" role="button" aria-pressed="true">Tipo</a></li>
+          <li><a href="evolucao.html" role="button" aria-pressed="true">Evolução</a></li>
+          <li><a href="comparar.html" role="button" aria-pressed="true">Comparar</a></li>
         </ul>
       </nav>
     </section>
@@ -38,13 +38,19 @@ pokemon battle">
     </section>
   </header>
   <main class="main">
-    <section class="search-site">
-      <div class="search-form">
-        <form class="form-site container">
-          <label for="input-search" class=" "> Buscar: </label>
-          <input type="search" name="q" id="input-search" name="q" title="Buscar" placeholder="Ex: nome ou número" autofocus autocapitalize="off" role="combobox" spellcheck="false" aria-expanded="false" aria-haspopup="false" autocomplete="off" maxlength="2024" wi>
-        </form>
+    <section class="search-section">
+      <form class="search-form">
+        <label class="btn" for="labelforselect" aria-expanded="false"> FILTRAR POR: </label>
+        <select class="select" id="labelforselect" aria-label="busca filtrada">
+          <option disabled selected value="">...</option>
+          <option value="A-Z">A-Z</option>
+          <option value="Z-A">Z-A</option>
+          <option value="asce-order">Crescente</option>
+          <option value="desce-order">Decrescente</option>
+        </select>
+      </form>
       </div>
+
 
     </section>
   </main>
