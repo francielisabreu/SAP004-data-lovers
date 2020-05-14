@@ -11,8 +11,8 @@ pokemon battle" />
   <title>Pokémania</title>
   <link rel="icon" href="img/icon-pokemania.svg" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -56,7 +56,7 @@ pokemon battle" />
           <label class="btn" for="inputForSearchGeneral" title="Buscar" aria-expanded="false"> BUSCAR </label>
           <input type="search" name="q" class="select" id="inputForSearchGeneral" autocomplete="off" autocapitalize="off" placeholder="Ex: pikachu">
 
-          <label class="btn" for=="labelForSelectFilter" aria-expanded="false" type="button">
+          <label class="btn" for=="labelForSelectFilter" title="Ordenar" aria-expanded="false" type="button">
             ORDENAR
           </label>
           <select class="select" id="labelForSelectFilter" aria-label="busca filtrada">
@@ -67,7 +67,7 @@ pokemon battle" />
             <option value="desce-order">151 a 01</option>
           </select>
 
-          <label class="btn" for="labelForSelectType" aria-expanded="false">
+          <label class="btn" for="labelForSelectType" title="Tipos" aria-expanded="false">
             TIPOS
           </label>
           <select class="select" id="labelForSelectType" aria-label="busca filtrada">
@@ -104,6 +104,11 @@ pokemon battle" />
         </div>
       </section>
   </main>
+  <footer class="footer">
+    <section>
+      <span class="copy">Projeto website Pokémania - </span>
+    </section>
+  </footer>
   <script src="main.js" type="module"></script>
 </body>
 
