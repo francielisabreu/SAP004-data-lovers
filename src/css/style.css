@@ -8,6 +8,9 @@ body,
 main {
   width: 100%;
   height: 100%;
+  word-spacing: 3px;
+  line-height: 1.8;
+  letter-spacing: 1px;
 }
 body {
   font-family: "nunito", Arial, Helvetica, sans-serif;
@@ -88,8 +91,9 @@ body {
 }
 
 .pokemonFigure {
-  padding: 30px;
-  margin: 0 70px 0 70px;
+  width: 100%;
+  padding: 10px;
+  margin: 0 80px 0 80px;
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -124,9 +128,9 @@ body {
   align-items: center;
 }
 .modal {
-  width: 30%;
-  min-width: 300px;
-  height: 70%;
+  width: 20%;
+  min-width: 500px;
+  height: 80%;
   position: relative;
 }
 .close {
@@ -137,10 +141,12 @@ body {
   width: 50px;
   height: 50px;
   cursor: pointer;
+  align-items: center;
   justify-content: center;
 }
 .modal-container.show {
   display: flex;
+  flex-wrap: wrap;
 }
 @media screen and (min-aspect-ratio: 16/9) {
   #videoBG {
@@ -195,6 +201,8 @@ body {
   text-align: center;
   font-size: 18px;
   font-weight: bolder;
+  margin: 10px auto;
+  padding: 10px;
 }
 .search-form {
   display: flex;
