@@ -265,3 +265,7 @@ body {
   color: #fff;
   background-color: #0e1013;
 }
+
+.search-form div {
+  margin-top: 10px;
+}
