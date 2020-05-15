@@ -1,4 +1,4 @@
-import { pokemon } from "./data.js";
+import { pokemon, filterByName } from "./data.js";
 import data from "./data/pokemon/pokemon.js";
 
 let figure = document.querySelector(".pokemonFigure");
