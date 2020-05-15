@@ -1,4 +1,4 @@
-import { pokemon, filterByName } from "./data.js";
+import { pokemon } from "./data.js";
 import data from "./data/pokemon/pokemon.js";
 
 let figure = document.querySelector(".pokemonFigure");
@@ -24,7 +24,8 @@ for (let pokemonTotal in data.pokemon) {
   figure.appendChild(div);
 }
 
-console.log();
+const cardPokemon = document.querySelector(".cardPokemon");
+cardPokemon.addEventListener("click", () => openModal("modal"));
 
 function openModal(modalId) {
   const modal = document.getElementById(modalId);
@@ -38,5 +39,3 @@ function openModal(modalId) {
     }
   });
 }
-const cardPokemon = document.querySelector(".cardPokemon");
-cardPokemon.addEventListener("click", () => openModal("modal"));
