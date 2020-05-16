@@ -185,7 +185,6 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10px;
   margin: 10px;
 }
 .introdution-search {
@@ -267,6 +266,14 @@ body {
 }
 
 .search-form .btnfilter {
-  margin-bottom: 10px;
-  padding: 5px auto;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.listOfPokemon {
+  flex-wrap: wrap;
+  display: flex;
+  margin: 10px;
+  justify-content: space-evenly;
+  padding: 30px;
 }
