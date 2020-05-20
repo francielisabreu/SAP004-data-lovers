@@ -1,6 +1,4 @@
 import { pokemon } from "./data.js";
-import data from "./data/pokemon/pokemon.js";
-
 let figure = document.querySelector(".pokemonFigure");
 
 //let retornoPokemon = pokemon(data);
@@ -23,6 +21,14 @@ for (let pokemonTotal in data.pokemon) {
   div.appendChild(img);
   figure.appendChild(div);
 }
+
+import data from "./data/pokemon/pokemon.js";
+
+let nome = "Bulbasaur";
+
+const nomesPegos = data["pokemon"].filter((item) => item.name === nome);
+console.log(nomesPegos);
+nomesPegos = document.querySelector(".pokemonFigure");
 
 const cardPokemon = document.querySelector(".cardPokemon");
 cardPokemon.addEventListener("click", () => openModal("modal"));

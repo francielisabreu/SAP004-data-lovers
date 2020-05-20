@@ -1,131 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Pokémania, aqui você vai ficar por dentro de tudo o que rola no universo do pokémon"
-    />
-    <meta
-      name="keywords"
-      content="pokémon, pokedex, pokemon, pokeball, 
-pokemon battle"
-    />
-    <meta name="robots" content="index, follow" />
-    <title>Pokémania</title>
-    <link rel="icon" href="icon-pokemania.svg" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header class="header-bg">
-      <section class="menu">
-        <div class="menu-logo">
-          <a href="index.html">
-            <img
-              src="pokemania-logo.svg"
-              alt="Pokémania"
-              title="Pokémania"
-              width="175"
-              height="57 "
-            />
-          </a>
-        </div>
-        <nav class="menu-nav">
-          <ul>
-            <li>
-              <a href="index.html" role="button" aria-pressed="true">Home</a>
-            </li>
-            <li>
-              <a href="evolucao.html" role="button" aria-pressed="true"
-                >Evolução</a
-              >
-            </li>
-            <li>
-              <a href="comparar.html" role="button" aria-pressed="true"
-                >Comparar</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Pokémania, aqui você vai ficar por dentro de tudo o que rola no universo do pokémon" />
+  <meta name="keywords" content="pokémon, pokedex, pokemon, pokeball, 
+pokemon battle" />
+  <meta name="robots" content="index, follow" />
+  <title>Pokémania</title>
+  <link rel="icon" href="img/icon-pokemania.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-      <section class="video-content">
-        <video
-          playsinline="playsinline"
-          id="videoBG"
-          autoplay="autoplay"
-          muted="muted"
-          loop="loop"
-        >
-          <source src="../video/pokemania-low-02.mp4" type="video/mp4" />
-        </video>
-        <img src="../img/poster-pokemania.png" alt="poster pokemania" />
-      </section>
-    </header>
-    <main class="main">
-      <section class="search-section">
+<body>
+  <header class="header-bg">
+    <section class="menu">
+      <div class="menu-logo">
+        <a href="index.html">
+          <img src="img/pokemania-logo.svg" alt="Pokémania" title="Pokémania" width="175" height="57 " />
+        </a>
+      </div>
+      <nav class="menu-nav">
+        <ul>
+          <li>
+            <a href="index.html" role="button" aria-pressed="true">Home</a>
+          </li>
+          <li>
+            <a href="evolucao.html" role="button" aria-pressed="true">Evolução</a>
+          </li>
+          <li>
+            <a href="comparar.html" role="button" aria-pressed="true">Comparar</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="video-content">
+      <video playsinline="playsinline" id="videoBG" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="../video/pokemania-low-02.mp4" type="video/mp4" />
+      </video>
+      <img src="../img/poster-pokemania.png" alt="poster pokemania" title="poster pokemania" />
+    </section>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <div class="introdution-search">
+        <p class="searh-p"> FAÇA A SUA BUSCA PELO NOME DO SEU POKÉMON FAVORITO AQUI! </p>
+      </div>
+      <div class="form-resposive">
         <form class="search-form">
-          <select
-            class="select"
-            id="labelforselect"
-            aria-label="busca filtrada"
-          >
+          <label class="btn" for="inputForSearchGeneral" title="Buscar" aria-expanded="false"> BUSCAR </label>
+          <input type="search" name="q" class="select" id="inputForSearchGeneral" autocomplete="off" autocapitalize="off" placeholder="Ex: pikachu">
+
+          <label class="btn" for=="labelForSelectFilter" aria-expanded="false" type="button">
+            ORDENAR
+          </label>
+          <select class="select" id="labelForSelectFilter" aria-label="busca filtrada">
             <option disabled selected value="">...</option>
             <option value="A-Z">A-Z</option>
             <option value="Z-A">Z-A</option>
             <option value="asce-order">01 a 151</option>
             <option value="desce-order">151 a 01</option>
           </select>
-          <label class="btn" for="labelforselect" aria-expanded="false">
-            FILTRAR
+
+          <label class="btn" for="labelForSelectType" aria-expanded="false">
+            TIPOS
           </label>
-          <select
-            class="select"
-            id="labelforselect"
-            aria-label="busca filtrada"
-          >
-            <option disabled selected value="">Tipos</option>
-            <option value="normal">Normal</option>
-            <option value="lutador">Lutador</option>
-            <option value="voador">Voador</option>
-            <option value="venenoso">Venenoso</option>
-            <option value="terrestre">Terrestre</option>
-            <option value="pedra">Pedra</option>
-            <option value="inseto">Inseto</option>
-            <option value="fantasma">Fantasma</option>
-            <option value="aço">Aço</option>
-            <option value="fogo">Fogo</option>
-            <option value="agua">Água</option>
-            <option value="planta">Planta</option>
-            <option value="eletrico">Elétrico</option>
-            <option value="psiquico">Psíquico</option>
-            <option value="gelo">Gelo</option>
-            <option value="dragao">Dragão</option>
-            <option value="fada">Fada</option>
-            <option value="noturno">Noturno</option>
+          <select class="select" id="labelForSelectType" aria-label="busca filtrada">
+            <option disabled selected value="">...</option>
+            <option value="Grass">Planta</option>
+            <option value="Fire">Fogo</option>
+            <option value="Water">Água</option>
+            <option value="Bug">Inseto</option>
+            <option value="Normal">Normal</option>
+            <option value="Poison">Venenoso</option>
+            <option value="Electric">Elétrico</option>
+            <option value="Ground">Terra</option>
+            <option value="Psychic">Psíquico</option>
+            <option value="Rock">Pedra</option>
+            <option value="Flying">Voador</option>
+            <option value="Ghost">Fantasma</option>
+            <option value="Ice">Gelo</option>
+            <option value="Dragon">Dragão</option>
+            <option value="Steel">Metálico</option>
+            <option value="Dark">Noturno</option>
+            <option value="Fairy">Fada</option>
+            <option value="Fighting">Lutador</option>
           </select>
-          <label class="btn" for="labelforselect" aria-expanded="false">
-            FILTRAR
-          </label>
-        </form>
-      </section>
-    </main>
-    <main>
-      <div class="pokemonFigura"></div>
-    </main>
-    <div id="modal" class="modal-container">
-      <div class="modal cardPokemon">
-        <button class="fechar cardPokemon">x</button>
-        <h1>Aqui vai o pokemon</h1>
+
       </div>
-    </div>
-    <script src="main.js" type="module"></script>
-  </body>
+      </form>
+      <section class="pokemonFigure"></section>
+      <section>
+        <div id=modal class="modal-container">
+          <div class="modal cardPokemon">
+            <button class="close cardPokemon">x</button>
+            <h1>Aqui vai o pokemon</h1>
+          </div>
+        </div>
+      </section>
+  </main>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
