@@ -49,52 +49,48 @@ pokemon battle" />
   <main>
     <section class="search-section">
       <div class="introdution-search">
-        <p> FAÇA A SUA BUSCA PELO NOME DO POKÉMON OU UTILIZANDO O Nº DOS 151 DISPONÍVEIS AQUI! </p>
+        <p class="searh-p"> FAÇA A SUA BUSCA PELO NOME DO SEU POKÉMON FAVORITO AQUI! </p>
       </div>
       <div class="form-resposive">
         <form class="search-form">
-          <div class="btnfilter">
-            <label class="btn" for="inputForSearchGeneral" title="Buscar" aria-expanded="false"> BUSCAR: </label>
-            <input type="search" name="q" class="select" id="inputForSearchGeneral" autocomplete="off" autocapitalize="off" placeholder="Ex: pikachu" height="30">
-          </div>
-          <div class="btnfilter">
-            <label class="btn" for="labelForSelectOrder" title="Ordenar" aria-expanded="false" type="button">
-              ORDENAR:
-            </label>
-            <select class="select" id="labelForSelectOrder" name="filter" aria-label="busca ordenada">
-              <option disabled selected value="">...</option>
-              <option value="A-Z">A-Z</option>
-              <option value="Z-A">Z-A</option>
-              <option value="asce-order">01 a 151</option>
-              <option value="desce-order">151 a 01</option>
-            </select>
-          </div>
-          <div class="btnfilter">
-            <label class="btn" for="labelForSelectType" title="Tipos" aria-expanded="false">
-              TIPOS:
-            </label>
-            <select class="select" id="labelForSelectType" aria-label="busca filtrada">
-              <option disabled selected value="">...</option>
-              <option value="Grass">Planta</option>
-              <option value="Fire">Fogo</option>
-              <option value="Water">Água</option>
-              <option value="Bug">Inseto</option>
-              <option value="Normal">Normal</option>
-              <option value="Poison">Venenoso</option>
-              <option value="Electric">Elétrico</option>
-              <option value="Ground">Terra</option>
-              <option value="Psychic">Psíquico</option>
-              <option value="Rock">Pedra</option>
-              <option value="Flying">Voador</option>
-              <option value="Ghost">Fantasma</option>
-              <option value="Ice">Gelo</option>
-              <option value="Dragon">Dragão</option>
-              <option value="Steel">Metálico</option>
-              <option value="Dark">Noturno</option>
-              <option value="Fairy">Fada</option>
-              <option value="Fighting">Lutador</option>
-            </select>
-          </div>
+          <label class="btn" for="inputForSearchGeneral" title="Buscar" aria-expanded="false"> BUSCAR </label>
+          <input type="search" name="q" class="select" id="inputForSearchGeneral" autocomplete="off" autocapitalize="off" placeholder="Ex: pikachu">
+
+          <label class="btn" for=="labelForSelectFilter" aria-expanded="false" type="button">
+            ORDENAR
+          </label>
+          <select class="select" id="labelForSelectFilter" aria-label="busca filtrada">
+            <option disabled selected value="">...</option>
+            <option value="A-Z">A-Z</option>
+            <option value="Z-A">Z-A</option>
+            <option value="asce-order">01 a 151</option>
+            <option value="desce-order">151 a 01</option>
+          </select>
+
+          <label class="btn" for="labelForSelectType" aria-expanded="false">
+            TIPOS
+          </label>
+          <select class="select" id="labelForSelectType" aria-label="busca filtrada">
+            <option disabled selected value="">...</option>
+            <option value="Grass">Planta</option>
+            <option value="Fire">Fogo</option>
+            <option value="Water">Água</option>
+            <option value="Bug">Inseto</option>
+            <option value="Normal">Normal</option>
+            <option value="Poison">Venenoso</option>
+            <option value="Electric">Elétrico</option>
+            <option value="Ground">Terra</option>
+            <option value="Psychic">Psíquico</option>
+            <option value="Rock">Pedra</option>
+            <option value="Flying">Voador</option>
+            <option value="Ghost">Fantasma</option>
+            <option value="Ice">Gelo</option>
+            <option value="Dragon">Dragão</option>
+            <option value="Steel">Metálico</option>
+            <option value="Dark">Noturno</option>
+            <option value="Fairy">Fada</option>
+            <option value="Fighting">Lutador</option>
+          </select>
 
       </div>
       </form>
@@ -108,11 +104,6 @@ pokemon battle" />
         </div>
       </section>
   </main>
-  <footer class="footer">
-    <section>
-      <span class="copy">Projeto website Pokémania - </span>
-    </section>
-  </footer>
   <script src="main.js" type="module"></script>
 </body>
 
